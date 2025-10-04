@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    font-family:"serif";
+    background-color:#b4b4b4;
+    color:#49444b;
+}
+.hero{
+    display:flex;
+    height:100vh;
+}
+.hero-text{
+    flex:1.2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:300px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  font-family:'Playfair Display', serif;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-text .company {
+  font-size: 40px;              
+  letter-spacing: 8px;          
+  font-weight: 900;             
+  text-transform: uppercase; 
+  display: inline-block;
+
+  background-color: #4e2c69;
+  background-size: 200% 200%; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  animation: gradient-move 5s ease infinite;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #4e2c69;
+  color: white;
+  padding: 8px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3a204f;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 680px;
+  height: 100vh;
+  object-fit: cover;
+}
+@media (max-width: 1200px){
+    .hero-text{
+        padding: 80px;
+    }
+    .hero-text h1{
+        font-size: 42px;
+    }
+    .hero-text .company{
+        font-size: 36px;
+        letter-spacing: 6px;
+    }
+    .hero-image img{
+        width: 600px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px){
+    .hero{
+        flex-direction: column;
+        height: auto;
+    }
+    .hero-text{
+        padding: 50px;
+        align-items: center; /* center text on tablet */
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 36px;
+    }
+    .hero-text .company{
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+    .hero-image img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px){
+    .hero-text{
+        padding: 30px;
+    }
+    .hero-text h1{
+        font-size: 28px;
+    }
+    .hero-text p{
+        font-size: 14px;
+    }
+    .hero-text .company{
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .btn{
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+    .hero-image img{
+        width: 100%;
+        height: auto;
+    }
+}

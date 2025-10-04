@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - ETHOS</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <a href="dashboard.html" class="back-link">&larr; Back to Shop</a>
+        <h1>My Profile</h1>
+        <form id="profileForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" disabled>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" disabled>
+            </div>
+            <div class="form-actions">
+                <button type="button" id="edit-btn" class="btn">Edit</button>
+                <button type="submit" id="save-btn" class="btn btn-primary hidden">Save Changes</button>
+            </div>
+        </form>
+    </div>
+    <div id="toast-notification" class="toast"></div>
+    <script src="profile.js"></script>
+</body>
+</html>

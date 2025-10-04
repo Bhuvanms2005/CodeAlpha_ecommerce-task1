@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ETHOS</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-form">
+            <h1>Shipping & Payment</h1>
+            <form id="checkoutForm">
+                <h2>Shipping Address</h2>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="postalCode" placeholder="Postal Code" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                
+                <h2>Payment Method</h2>
+                <div class="payment-method">
+                    <input type="radio" id="cod" name="paymentMethod" value="Cash on Delivery" checked>
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+
+                <button type="submit" class="btn-place-order">Place Order</button>
+            </form>
+        </div>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div id="summary-items"></div>
+            <div class="summary-total">
+                <span>Total:</span>
+                <span id="summary-total-price"></span>
+            </div>
+        </div>
+    </div>
+    <div id="toast-notification" class="toast"></div>
+    <script src="checkout.js"></script>
+</body>
+</html>
